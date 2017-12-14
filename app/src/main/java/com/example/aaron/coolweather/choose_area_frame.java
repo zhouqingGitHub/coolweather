@@ -1,5 +1,6 @@
 package com.example.aaron.coolweather;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.example.aaron.coolweather.db.City;
 import com.example.aaron.coolweather.db.Country;
 import com.example.aaron.coolweather.db.Province;
+import com.example.aaron.coolweather.gson.Weather;
 import com.example.aaron.coolweather.util.HttpUtil;
 import com.example.aaron.coolweather.util.Utility;
 
@@ -107,6 +109,10 @@ public class choose_area_frame extends Fragment {
                 }
                 else
                 {
+                    String weatherId = countryList.get(i).getWeather_id();
+                    Intent inent = new Intent(getActivity(), WeatherActiity.class);
+                    inent.putExtra("weatherId",weatherId);
+                    startActivity(inent);
 
                 }
             }

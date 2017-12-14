@@ -13,8 +13,17 @@ public class Country extends DataSupport {
     private int    id;
     /*城市Id*/
     private int    cityId;
+
+    public String getWeather_id() {
+        return weather_id;
+    }
+
+    public void setWeather_id(String weather_id) {
+        this.weather_id = weather_id;
+    }
+
     /*天气Id*/
-    private int    weatherId;
+    private String    weather_id;
     public String getCountyName() {
         return countyName;
     }
@@ -39,13 +48,8 @@ public class Country extends DataSupport {
         this.cityId = cityId;
     }
 
-    public int getWeatherId() {
-        return weatherId;
-    }
 
-    public void setWeatherId(int weatherId) {
-        this.weatherId = weatherId;
-    }
+
 
 
 
