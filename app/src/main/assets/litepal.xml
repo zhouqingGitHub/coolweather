@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="cool_weather" ></dbname>
+    <version value="1" ></version>
+    <list>
+
+        <mapping class="com.example.aaron.coolweather.db.Country"></mapping>
+        <mapping class="com.example.aaron.coolweather.db.City"></mapping>
+        <mapping class="com.example.aaron.coolweather.db.Province"></mapping>
+
+    </list>
+</litepal>
+
+<!--
+dbname 数据库名称
+version 数据库版本
+mapping 将实体类映射到数据库中
+-->
