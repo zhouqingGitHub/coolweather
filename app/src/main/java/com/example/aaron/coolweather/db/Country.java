@@ -13,7 +13,8 @@ public class Country extends DataSupport {
     private int    id;
     /*城市Id*/
     private int    cityId;
-
+    /*天气Id*/
+    private int    weatherId;
     public String getCountyName() {
         return countyName;
     }
@@ -46,7 +47,6 @@ public class Country extends DataSupport {
         this.weatherId = weatherId;
     }
 
-    /*天气Id*/
-    private int    weatherId;
+
 
 }

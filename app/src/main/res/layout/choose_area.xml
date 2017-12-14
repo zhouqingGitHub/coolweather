@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+         >
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="@mipmap/ic_back"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="中国"
+             />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/arealist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
